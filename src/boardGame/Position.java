@@ -16,17 +16,9 @@ public class Position {
 	}
 	
 	
-	//getter and setters
-	public void setRow(int row) {
-		this.row = row;		
-	}
-	
+	//getter and setters	
 	public int getRow() {
 		return row;
-	}
-	
-	public void setColumn(int column) {
-		this.column = column;
 	}
 	
 	public int getColumn() {
@@ -35,12 +27,15 @@ public class Position {
 	
 	
 	//methods
-	public void setValues(int row, int columns){		
+	public void setValues(int row, int column){	
+		this.row = row;
+		this.column = column;
 	}
 	
 	@Override
-	public String toString() {
+	public String toString() {		//imprime uma posição na tela
 		return row + ", " + column;
 	}
 	
 }
+// Essa classe representa uma posição no tabuleiro
