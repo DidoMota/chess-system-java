@@ -28,6 +28,10 @@ public class ChessPosition {
 	//methods
 	protected Position toPosition() {
 		return new Position(8 - row, column - 'a');
+		/*
+		 * Observe que na linha: 8-8 = 0, 8-7=1, assim por diante
+		 * Oberve que na coluna: 'a'-'a' = 0, 'b'-'a' = 1, 'c'-'a' = 2 assim por diante
+		 */
 	}
 	
 	protected static ChessPosition fromPosition(Position position) {
