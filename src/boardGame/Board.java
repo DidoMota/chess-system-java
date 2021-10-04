@@ -1,5 +1,7 @@
 package boardGame;
 
+
+// essa classe representa o tabuleiro
 public class Board {
 	
 	private int rows;
